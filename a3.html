@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Devolução de Ferramentas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Devolução de Ferramentas</h1>
+        <nav>
+            <ul>
+                <li><a href="#ferramentas">Ferramentas</a></li>
+                <li><a href="#nova-ferramenta">Adicionar Ferramenta</a></li>
+                <li><a href="#devolucoes">Devoluções</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="ferramentas">
+            <h2>Lista de Ferramentas</h2>
+            <ul id="ferramentas-lista">
+                <!-- Ferramentas serão carregadas aqui -->
+            </ul>
+        </section>
+
+        <section id="nova-ferramenta">
+            <h2>Adicionar Nova Ferramenta</h2>
+            <form id="form-ferramenta">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+
+        <section id="devolucoes">
+            <h2>Registrar Devolução</h2>
+            <form id="form-devolucao">
+                <label for="ferramenta-id">ID da Ferramenta:</label>
+                <input type="number" id="ferramenta-id" name="ferramenta-id" required>
+                <label for="data-devolucao">Data de Devolução:</label>
+                <input type="date" id="data-devolucao" name="data-devolucao" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sistema de Devolução de Ferramentas</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
